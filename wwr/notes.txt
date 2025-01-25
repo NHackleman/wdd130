@@ -1,0 +1,9 @@
+https://coolors.co/535353-eee5e9-73c2be-edd83d
+primary-color: #eee5e9
+secondary-color: #535353
+accent1-color: #73c2be
+accent2-color: #edd83d
+
+
+heading-font: 'Delius', serif
+text-font: 'Funnel Sans', sans-serif

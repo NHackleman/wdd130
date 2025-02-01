@@ -30,10 +30,6 @@ p {
     font-family: 'Funnel Sans', sans-serif;
 }
 
-footer nav a {
-    text-decoration: none;
-}
-
 .hero {
     position: relative;
     width: 100%;
@@ -117,6 +113,10 @@ header nav a:hover {
     position: relative;
     text-align: center;
     color: white;
+    margin: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
 }
 
 .hero-content {
@@ -136,46 +136,75 @@ header nav a:hover {
 /* History Section Styles */
 .history {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    padding: 20px;
     background-color: var(--secondary-color);
+    margin: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
 }
 
 .history-content {
     display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 0 20px 20px 20px
 }
 
-.history-image {
+.history img {
     margin: 0 20px;
+    height: 125px;
+    width: auto;
 }
 
-/* Adventure Section Styles */
-.adventure {
-    text-align: center;
-    padding: 20px;
-}
-
+/* Gallery Section Styles */
 .gallery {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-color);
+    margin: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.gallery-content {
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.gallery-item {
-    margin: 10px;
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.caption {
-    text-align: center;
-    color: var(--primary-color);
+figure img {
+    height: 110px;
+    width: auto;
+}
+
+figure figcaption {
+    font-size: 0.8em;
 }
 
 /* Footer Styles */
-.site-footer {
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-align: center;
     padding: 10px;
+}
+
+footer p {
+    grid-column: 2;
+}
+
+footer nav a {
+    text-decoration: none;
 }
